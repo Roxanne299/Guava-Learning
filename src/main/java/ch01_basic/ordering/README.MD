@@ -2,6 +2,7 @@
 排序器[Ordering]是Guava流畅风格比较器[Comparator]的实现，它可以用来为构建复杂的比较器，以完成集合排序的功能
 
 从实现上说，Ordering实例就是一个特殊的Comparator实例。Ordering把很多基于Comparator的静态方法（如Collections.max）包装为自己的实例方法（非静态方法），并且提供了链式调用方法，来定制和增强现有的比较器
+**需要注意的是：里面很多方法都是缩略写法，比如`Ordering.natural()` 缩写成了 `natural()`**
 
 
 ### 1. 创建排序器
